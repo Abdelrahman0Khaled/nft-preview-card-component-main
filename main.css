@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.card{
+    width: 320px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+
+.card .bg-soft img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 100%;
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+.card .bg-soft{
+    position: relative;
+
+}
+
+.card .bg-soft::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: hsl(178, 100%, 50% , 0.500);
+    z-index: -11;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-image: url(images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.card .bg-soft:hover::before{
+    z-index: 999;
+    cursor:pointer;
+
+}
+
+.card h1 a{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition:0.3s ;
+    -webkit-transition:0.3s ;
+    -moz-transition:0.3s ;
+    -ms-transition:0.3s ;
+    -o-transition:0.3s ;
+
+}
+
+.card h1{
+    margin-bottom: 10px;
+
+}
+
+.card h1 a:hover{
+    color: hsl(178, 100%, 50%);
+
+}
+
+.card p{
+    color: hsl(215, 32%, 27%);
+    max-width: 280px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+
+.card .detel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
+
+.card .detel div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+   
+}
+
+.card .detel div img{
+    width: 18px;
+    display: block;
+    margin-bottom: 0;
+    margin-right: 5px;
+    
+}
+
+.card .detel .etherm img{
+    width: 10px;
+    height: 18px;
+
+}
+
+.card .detel .etherm {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.date{
+    color: hsl(215, 32%, 27%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.date img{
+    margin-top: 3px;
+
+}
+
+hr{
+    opacity: 0.2;
+    margin-bottom: 15px;
+
+}
+
+.card .personal img{
+    margin-bottom: 0;
+    margin-right: 10px;
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+
+.card .personal{
+    display: flex;
+    flex-direction: row;
+    color: hsl(215, 32%, 27%);
+
+}
+
+.card .personal a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    transition: 0.3;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+}
+
+.card .personal a:hover{
+    color: hsl(178, 100%, 50%);
+
+}
+
+.card .personal div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
